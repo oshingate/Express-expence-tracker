@@ -1,0 +1,332 @@
+body {
+  font-size: 13px;
+  background-color: #b8b8b85b;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+}
+$pri: #00a676;
+$sec: #ef476f;
+$ter: #565254;
+input,
+textarea,
+select {
+  width: 100%;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+  padding: 0.5rem 0;
+  &::placeholder {
+    padding-left: 1rem;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+}
+.flex {
+  display: flex;
+}
+.flex-vertical {
+  flex-direction: column;
+}
+.flex-50 {
+  flex: 0 1 48%;
+  margin: 1%;
+}
+.flex-45 {
+  margin: 1%;
+}
+.flex-25 {
+  flex: 0 1 25%;
+}
+.flex-75 {
+  flex: 0 1 75%;
+}
+.jsb {
+  justify-content: space-between;
+}
+.center-center {
+  justify-content: center;
+  align-items: center;
+
+  & > * {
+    margin-right: 2rem;
+  }
+}
+.btn {
+  padding: 0.4rem 0.8rem;
+  border-radius: 10px;
+  outline: none;
+}
+.btn-pri {
+  background-color: $pri;
+  color: white;
+  &:hover {
+    background-color: #00a67794;
+    color: wheat;
+  }
+}
+.btn-sec {
+  background-color: $sec;
+  color: white;
+  &:hover {
+    background-color: #ef476ead;
+    color: wheat;
+  }
+}
+.btn-ter {
+  background-color: $ter;
+  color: rgb(240, 219, 168);
+  &:hover {
+    background-color: rgb(128, 128, 128);
+    color: rgb(255, 255, 255);
+  }
+}
+.sec-padding {
+  padding: 1.5rem 0;
+}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.tac {
+  text-align: center;
+}
+h1 {
+  font-size: 2.8rem;
+  font-weight: 800;
+}
+h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+h3 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+h4 {
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+h5 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+h6 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+p {
+  font-size: 1.3rem;
+  color: rgb(75, 74, 74);
+}
+.text-center {
+  text-align: center;
+}
+.mb-1 {
+  margin-bottom: 1rem;
+}
+.color-pri {
+  color: $pri;
+}
+.color-sec {
+  color: $sec;
+}
+//header
+
+header {
+  background: linear-gradient(to right top, #1b393fb0, #009efa75);
+  padding: 1rem 0;
+  strong {
+    font-size: 2rem;
+    font-weight: 800;
+    color: rgb(100, 49, 16);
+    text-shadow: 2px 2px goldenrod;
+  }
+  .container {
+    max-width: 1200px;
+  }
+  a {
+    margin-right: 1rem;
+    &:hover {
+      text-decoration: underline;
+      background-color: #00a67798;
+      color: wheat;
+    }
+  }
+}
+//hero-sec
+
+.hero-sec {
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: underline;
+    color: $pri;
+  }
+}
+
+.about-sec {
+  text-align: center;
+}
+.listbtn-div {
+  text-align: center;
+  h5 {
+    margin-bottom: 1rem;
+  }
+}
+
+// create event sec
+.eventCreate-sec {
+  form {
+    max-width: 40%;
+    margin: 0 auto;
+    background-color: #b39cd0;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px rgb(148, 147, 147);
+    padding: 2rem;
+  }
+}
+
+.event-div {
+  max-width: 60%;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 4px 4px 4px gray;
+  margin-bottom: 1rem;
+  background-color: #00a6779d;
+
+  h4 {
+    color: $ter;
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+}
+
+//eventDetails-sec
+
+.eventDetails-div {
+  .flex-50 {
+    & > * {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .eventDetails-div__left {
+    h2 {
+      font-size: 2rem;
+      color: chocolate;
+    }
+    p {
+      font-size: 1rem;
+    }
+    .likes-div {
+      span {
+        color: red;
+        padding: 0.5rem;
+        border: 1px dashed blue;
+      }
+      a {
+        margin-left: 1rem;
+      }
+      i {
+        font-size: 1.5rem;
+        margin-right: 1rem;
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+    .categories-div a {
+      margin: 0 0.5rem;
+    }
+  }
+
+  .eventDetails-div__right {
+    h4 {
+      font-size: 1.3rem;
+      font-weight: 800;
+    }
+    span {
+      color: rgb(100, 80, 80);
+      font-weight: 600;
+    }
+  }
+}
+
+.commentForm-sec {
+  form {
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px rgb(148, 147, 147);
+    padding: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #b39cd0;
+  }
+}
+.remarkList-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+  .remark-div {
+    margin: 0.5rem 0;
+    border-radius: 10px;
+    box-shadow: 4px 4px 2px rgb(175, 173, 173);
+    // border-bottom: 1px solid gray;
+    padding: 1rem;
+    background-color: #f3c5ff;
+    .left > * {
+      padding: 0.5rem 0;
+    }
+    .left {
+      h3 {
+        font-size: 1.4rem;
+        margin-bottom: 0.4rem;
+      }
+      h4 {
+        font-size: 1rem;
+        span {
+          color: $pri;
+          margin-left: 0.5rem;
+        }
+      }
+      h6 {
+        span {
+          color: $pri;
+          margin-left: 0.5rem;
+        }
+      }
+    }
+    .right {
+      i {
+        margin-right: 1rem;
+        font-size: 1.2rem;
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+      & > * {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
+
+//aside bar
+aside {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #acd2ed;
+  h4 {
+    text-align: center;
+    padding: 2rem 0;
+  }
+  .allTags-div {
+    flex-wrap: wrap;
+    padding: 1rem;
+  }
+}
